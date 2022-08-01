@@ -2,18 +2,10 @@
 
 @REM create place to store save/ scripts/ setting.xml etc...
 set DATA_DIR=%CD%/data
-echo DATA_DIR=%DATA_DIR%
-
-set USE_STEAM=false
-echo USE_STEAM=%USE_STEAM%
 
 @REM set exe
-@REM set EXECUTABLE="/d/SteamLibrary/steamapps/common/Stationeers Dedicated Server/rocketstation_DedicatedServer.exe"
+@REM set EXECUTABLE="D:\SteamLibrary\steamapps\common\Stationeers Dedicated Server\rocketstation_DedicatedServer.exe"
 set EXECUTABLE="C:\Users\Brogan\Documents\Unity\stationeers\Builds\Server_Win\rocketstation.exe"
-
-echo EXECUTABLE=%EXECUTABLE%
-
-@REM --- Run Stationeers ---
 
 @REM # Define settings
 set SERVER_NAME="Brogan Test Dedi Server"
@@ -31,14 +23,10 @@ set SAVE_PATH="%DATA_DIR%/saves"
 set LOG_FILE="%DATA_DIR%/log.txt"
 set SETTINGS_PATH="%DATA_DIR%/settings.xml"
 
-echo SAVE_PATH=%SAVE_PATH%
-echo LOG_FILE=%LOG_FILE%
-echo SETTINGS_PATH=%SETTINGS_PATH%
-
 @REM Run the server
 %EXECUTABLE% ^
 -loadlatest %SAVE_NAME% %WORLD_TYPE% ^
-@REM -logFile %LOG_FILE% ^
+-logFile %LOG_FILE% ^
 -settingspath %SETTINGS_PATH% ^
 -settings StartLocalHost %START_LOCAL_HOST% ServerVisible %SERVER_VISIBLE% ^
     GamePort %GAME_PORT% UPNPEnabled %UPNP_ENABLED% ServerName %SERVER_NAME% ^
