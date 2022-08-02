@@ -14,6 +14,7 @@ SERVER_NAME="Brogan Test Dedi Server"
 SAVE_NAME="Dedi Test"
 WORLD_TYPE="mars"
 SERVER_PASSWORD="123"
+SERVER_AUTH_SECRET="stationeers"
 GAME_PORT=27016
 START_LOCAL_HOST=true
 SERVER_VISIBLE=true
@@ -34,4 +35,5 @@ SETTINGS_PATH="$DATA_DIR/settings.xml"
     GamePort $GAME_PORT UPNPEnabled $UPNP_ENABLED ServerName "$SERVER_NAME" \
     ServerPassword "$SERVER_PASSWORD" ServerMaxPlayers $SERVER_MAX_PLAYERS \
     AutoSave $AUTO_SAVE SaveInterval $SAVE_INTERVAL \
-    SavePath "$SAVE_PATH"
+    SavePath "$SAVE_PATH" \
+    ServerAuthSecrete "$SERVER_AUTH_SECRET"

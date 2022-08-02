@@ -12,6 +12,7 @@ set SERVER_NAME="Brogan Test Dedi Server"
 set SAVE_NAME="Dedi Test"
 set WORLD_TYPE="mars"
 set SERVER_PASSWORD="123"
+set SERVER_AUTH_SECRET="stationeers"
 set GAME_PORT=27016
 set START_LOCAL_HOST=true
 set SERVER_VISIBLE=true
@@ -32,4 +33,5 @@ set SETTINGS_PATH="%DATA_DIR%/settings.xml"
     GamePort %GAME_PORT% UPNPEnabled %UPNP_ENABLED% ServerName %SERVER_NAME% ^
     ServerPassword %SERVER_PASSWORD% ServerMaxPlayers %SERVER_MAX_PLAYERS% ^
     AutoSave %AUTO_SAVE% SaveInterval %SAVE_INTERVAL% ^
-    SavePath %SAVE_PATH%
+    SavePath %SAVE_PATH% ^
+    ServerAuthSecret %SERVER_AUTH_SECRET%
